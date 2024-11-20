@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        :root {
+            /* Light theme variables */
+            --primary: #2563eb;
+            --success: #16a34a;
+            --bg-light: #f8fafc;
+            --text-dark: #1e293b;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            --card-bg: #ffffff;
+            --border-color: #e2e8f0;
+            --tooltip-bg: #1e293b;
+            --tooltip-text: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            /* Dark theme variables */
+            --primary: #60a5fa;
+            --success: #22c55e;
+            --bg-light: #1e293b;
+            --text-dark: #f8fafc;
+            --shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.1);
+            --card-bg: #2d3748;
+            --border-color: #4a5568;
+            --tooltip-bg: #f8fafc;
+            --tooltip-text: #1e293b;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        #weather {
+            padding: 20px;
+            margin: 50px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+        }
+
+        button {
+            padding: 10px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <div id="weather">
+        <h1>Weather Information</h1>
+        <div id="weather-info"></div>
+        <button onclick="toggleTheme()">Toggle Dark Mode</button>
+    </div>
+
+    <script>
+        // Theme toggle function
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains('dark-mode')) {
+                document.body.setAttribute('data-theme', 'dark');
+            } else {
+                document.body.removeAttribute('data-theme');
+            }
+        }
+
+        // Define the API key and endpoint for OpenWeatherMap
+        const API_KEY = "758af034b61816932128678994ec2c43";
+        const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5/weather";
+
+        // Check if geolocation is available
+        if ("geolocation" in navigator) {
+            navigator.geolocation.getCurrentPosition(
+                async function (position) {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+
+                    console.log(`Location: ${lat}, ${lon}`);
+
+                    try {
+                        // Fetch weather data using the coordinates
+                        const response = await fetch(
+                            `${WEATHER_API_URL}?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
+                        );
+
+                        if (!response.ok) {
+                            throw new Error(`HTTP Error: ${response.status}`);
+                        }
+
+                        const weatherData = await response.json();
+
+                        // Call the function to display the weather
+                        displayWeather(weatherData);
+                    } catch (error) {
+                        console.error("Failed to fetch weather data:", error.message);
+                    }
+                },
+                function (error) {
+                    console.error("Geolocation error:", error.message);
+                }
+            );
+        } else {
+            console.error("Geolocation is not supported in this browser.");
+        }
+
+        // Function to display the weather data
+        function displayWeather(data) {
+            const weatherDiv = document.getElementById("weather-info");
+            const { name, main, weather, sys } = data;
+
+            weatherDiv.innerHTML = `
+                <h2>Weather in ${name}</h2>
+                <p><strong>Temperature:</strong> ${main.temp}°C</p>
+                <p><strong>Condition:</strong> ${weather[0].description}</p>
+                <p><strong>Sunrise:</strong> ${new Date(sys.sunrise * 1000).toLocaleTimeString()}</p>
+                <p><strong>Sunset:</strong> ${new Date(sys.sunset * 1000).toLocaleTimeString()}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
