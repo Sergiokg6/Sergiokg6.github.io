@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleverest - Contact Us</title>
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body class="body">
+
+    <header class="header">
+        <div class="header__container">
+             <a href="index" class="header__logo"><img src="./assets/cleverest-super-wise-tree.png" alt="Cleverest Logo"></a>
+            <nav class="header__nav">
+                <a href="index" class="header__link">Home</a>
+                <div class="header__combobox">
+                    <button class="header__combobox-select">Services</button>
+                    <div class="header__combobox-options">
+                       <a href="#">Cleverest Mining</a>
+                       <a href="advanced-analytics">Advanced Analytics</a>
+                    </div>
+               </div>
+                <a href="our-team" class="header__link">Our Team</a>
+                <a href="blog" class="header__link">Blog</a>
+            </nav>
+
+            <a href="https://wa.me/56936978100?text=Hello!%20I%20would%20like%20to%20get%20in%20touch" class="header__contact-button" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+             
+            <div class="header__menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="header__mobile-menu">
+            <a href="#home" class="header__link">Stay Here</a>
+            <a href="#" class="header__link">Cleverest Mining</a>
+            <a href="advanced-analytics" class="header__link">Advanced Analytics</a>
+            <a href="our-team" class="header__link">Our Team</a>
+            <a href="blog" class="header__link">Blog</a>
+             <a href="#footer" class="header__link">CONTACT US</a>
+        </nav>
+    </header>
+
+
+    <section class="contact-hero">
+        <div class="container contact-hero__container">
+          <h1 class="contact-hero__title animate__fade-in-up">Start Transforming Your Data Today!</h1>
+          <p class="contact-hero__desc animate__fade-in-up">Unlock the power of advanced analytics with Cleverest. Fill out the form below to connect with us and start your journey towards better data insights.</p>
+        <img src="./assets/" alt="Data Transformation" class="contact-hero__image animate__fade-in-right">
+        </div>
+    </section>
+    <section class="contact-form-section">
+        <div class="container contact-form__container">
+                <h2 class="contact-form__title">Contact Us</h2>
+                <form id="contactForm" action="#" method="post" class="contact-form">
+                     <p id="error-message" class="error-message"></p>
+                     <div class="form-step form-step--active" data-step="1">
+                         <h3>Your Info</h3>
+                        <input type="text" name="name" placeholder="Full Name" required class="contact-form__input">
+                        <input type="email" name="email" placeholder="Email Address" required class="contact-form__input">
+                        <input type="tel" name="whatsapp" placeholder="WhatsApp Number (with country code)" required class="contact-form__input">
+                    </div>
+                      <div class="form-step" data-step="2">
+                         <h3>Business Info</h3>
+                            <input type="text" name="business_name" placeholder="Business Name" required class="contact-form__input">
+                         <select name="business_type" required class="contact-form__select">
+                           <option value="" disabled selected hidden>Business Type</option>
+                           <option value="Finance">Finance</option>
+                            <option value="E-commerce">E-commerce</option>
+                            <option value="Healthcare">Healthcare</option>
+                            <option value="Other">Other</option>
+                          </select>
+                        <input type="number" name="monthly_revenue" placeholder="Monthly Revenue" required class="contact-form__input">
+                          <input type="text" name="target_market" placeholder="Target Market Size" required class="contact-form__input">
+
+                    </div>
+                   <div class="form-step" data-step="3">
+                         <h3>Project Details</h3>
+                         <label for="project_budget" class="form-label">Project Budget</label>
+                           <input type="range" id="project_budget" name="project_budget" min="1000" max="100000" value="1000" class="form-range">
+                         <div class="select-container">
+                            <label class="form-label">Data Needs</label>
+                            <div class="select-multiple-container">
+                                  <div class="select-multiple__option">
+                                        <input id="predictive" type="checkbox" name="data_needs" value="Predictive Analytics" />
+                                       <label for="predictive">Predictive Analytics</label>
+                                   </div>
+                                    <div class="select-multiple__option">
+                                        <input  id="trend" type="checkbox" name="data_needs" value="Trend Analysis" />
+                                       <label for="trend">Trend Analysis</label>
+                                  </div>
+                                    <div class="select-multiple__option">
+                                     <input id="data" type="checkbox" name="data_needs" value="Data Visualization" />
+                                       <label for="data">Data Visualization</label>
+                                   </div>
+                                  <div class="select-multiple__option">
+                                       <input id="custom" type="checkbox" name="data_needs" value="Custom Solutions" />
+                                       <label for="custom">Custom Solutions</label>
+                                   </div>
+                            </div>
+                        </div>
+
+                        <textarea name="message" placeholder="Custom Requirements" required class="contact-form__textarea"></textarea>
+                    </div>
+                    <div class="form-navigation">
+                        <button type="button" class="prev-button form-button form-button--disabled" data-nav="prev" disabled>Previous</button>
+                        <button type="button" class="next-button form-button" data-nav="next">Next</button>
+                           <button type="submit" class="submit-button form-button">Submit</button>
+                    </div>
+                 </form>
+                <p class="contact-form__privacy">By clicking the Subscribe button, you agree to the <a href="#">Privacy Policy</a>.</p>
+            </div>
+    </section>
+
+  <section class="chatbot">
+    <div class="container chatbot__container">
+         <img src="./assets/cleverest-super-wise-tree.png" alt="Chatbot icon">
+          <p>Need immediate assistance?</p>
+         <a href="#">Talk to Our AI Assistant</a>
+    </div>
+  </section>
+
+    <footer class="footer" id="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <img src="./assets/cleverest-super-wise-tree.png" alt="Cleverest Logo" class="footer__logo">
+                <p><span>●</span> PARTNERSHIP WITH <span class="footer__minnovex">GOOGLE STUDIO</span><span>●</span></p>
+            </div>
+            <div class="footer__middle">
+                <div class="footer__links">
+                    <div class="footer__about">
+                        <h4 class="footer__links-title">About us</h4>
+                         <a href="our-team">Our Team</a>
+                        <a href="#">Work with us</a>
+                    </div>
+                    <div class="footer__services">
+                        <h4 class="footer__links-title">Our Services</h4>
+                         <a href="advanced-analytics">Advanced Analytics</a>
+                        <a href="#">Cleverest Safe TMS</a>
+                        <a href="#">Cleverest mining</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__right">
+                <h4 class="footer__links-title">Follow us</h4>
+                <div class="footer__social-icons">
+                    <a href="https://facebook.com"><img src="./assets/facebook-icon-cleverest.svg" alt="Facebook icon" style="width: 20px"></a>
+                    <a href="https://linkedin.com"><img src="./assets/linkedin-icon-cleverest.svg" alt="LinkedIn icon" style="width: 20px"></a>
+                    <a href="https://x.com"><img src="./assets/x-icon-cleverest.svg" alt="X icon" style="width: 20px"></a>
+                    <a href="https://instagram.com"><img src="./assets/instagram-icon-cleverest.svg" alt="Instagram icon" style="width: 20px"></a>
+                    <a href="https://gmail.com"><img src="./assets/gmail-icon-cleverest.svg" alt="Gmail icon" style="width: 20px"></a>
+                </div>
+            </div>
+        </div>
+        <p class="footer__copyright">© CLEVEREST 2024 - SITIO DESARROLLADO POR CLEVEREST EXPLORATION CORP.</p>
+    </footer>
+      <script src="./script.js"></script>
+      <script src="./contact-form.js"></script>
+</body>
+</html>
