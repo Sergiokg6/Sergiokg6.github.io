@@ -41,7 +41,7 @@
             <a href="advanced-analytics" class="header__link">Advanced Analytics</a>
             <a href="our-team" class="header__link">Our Team</a>
             <a href="blog" class="header__link">Blog</a>
-             <a href="#footer" class="header__link">CONTACT US</a>
+             <a href="index" class="header__link">BACK HOME</a>
         </nav>
     </header>
 
@@ -50,12 +50,12 @@
         <div class="container contact-hero__container">
           <h1 class="contact-hero__title animate__fade-in-up">Start Transforming Your Data Today!</h1>
           <p class="contact-hero__desc animate__fade-in-up">Unlock the power of advanced analytics with Cleverest. Fill out the form below to connect with us and start your journey towards better data insights.</p>
-        <img src="./assets/" alt="Data Transformation" class="contact-hero__image animate__fade-in-right">
+        <img src="./assets/cleverest-super-wise-tree.png" alt="Data Transformation" class="contact-hero__image animate__fade-in-right">
         </div>
     </section>
     <section class="contact-form-section">
         <div class="container contact-form__container">
-                <h2 class="contact-form__title">Contact Us</h2>
+                <h2 class="contact-form__title">Be Cleverest!</h2>
                 <form id="contactForm" action="#" method="post" class="contact-form">
                      <p id="error-message" class="error-message"></p>
                      <div class="form-step form-step--active" data-step="1">
@@ -67,13 +67,66 @@
                       <div class="form-step" data-step="2">
                          <h3>Business Info</h3>
                             <input type="text" name="business_name" placeholder="Business Name" required class="contact-form__input">
-                         <select name="business_type" required class="contact-form__select">
-                           <option value="" disabled selected hidden>Business Type</option>
-                           <option value="Finance">Finance</option>
-                            <option value="E-commerce">E-commerce</option>
-                            <option value="Healthcare">Healthcare</option>
-                            <option value="Other">Other</option>
-                          </select>
+                            <select name="business_type" required class="contact-form__select">
+                                <option value="" disabled selected hidden>Business Type</option>
+                                
+                                <!-- Finance -->
+                                <option value="Finance">Finance</option>
+                                <option value="Finance-Banking">Finance - Banking</option>
+                                <option value="Finance-Investment">Finance - Investment</option>
+                                <option value="Finance-Insurance">Finance - Insurance</option>
+                                
+                                <!-- E-commerce -->
+                                <option value="E-commerce">E-commerce</option>
+                                <option value="E-commerce-Retail">E-commerce - Retail</option>
+                                <option value="E-commerce-Wholesale">E-commerce - Wholesale</option>
+                                
+                                <!-- Education -->
+                                <option value="Education">Education</option>
+                                <option value="Education-Online">Education - Online</option>
+                                <option value="Education-Tutoring">Education - Tutoring</option>
+                                <option value="Education-Corporate">Education - Corporate Training</option>
+                                
+                                <!-- Healthcare -->
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Healthcare-Hospital">Healthcare - Hospital</option>
+                                <option value="Healthcare-Pharmacy">Healthcare - Pharmacy</option>
+                                <option value="Healthcare-Telemedicine">Healthcare - Telemedicine</option>
+                                
+                                <!-- Technology -->
+                                <option value="Technology">Technology</option>
+                                <option value="Technology-Software">Technology - Software Development</option>
+                                <option value="Technology-Hardware">Technology - Hardware Manufacturing</option>
+                                <option value="Technology-IT Services">Technology - IT Services</option>
+                                
+                                <!-- Retail -->
+                                <option value="Retail">Retail</option>
+                                <option value="Retail-Fashion">Retail - Fashion</option>
+                                <option value="Retail-Grocery">Retail - Grocery</option>
+                                <option value="Retail-Home">Retail - Home Goods</option>
+                                
+                                <!-- Hospitality -->
+                                <option value="Hospitality">Hospitality</option>
+                                <option value="Hospitality-Hotels">Hospitality - Hotels</option>
+                                <option value="Hospitality-Restaurants">Hospitality - Restaurants</option>
+                                <option value="Hospitality-Tourism">Hospitality - Tourism</option>
+                                
+                                <!-- Manufacturing -->
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="Manufacturing-Automotive">Manufacturing - Automotive</option>
+                                <option value="Manufacturing-Textiles">Manufacturing - Textiles</option>
+                                <option value="Manufacturing-Electronics">Manufacturing - Electronics</option>
+                                
+                                <!-- Media -->
+                                <option value="Media">Media</option>
+                                <option value="Media-Publishing">Media - Publishing</option>
+                                <option value="Media-Broadcasting">Media - Broadcasting</option>
+                                <option value="Media-Digital">Media - Digital Media</option>
+                                
+                                <!-- Other -->
+                                <option value="Other">Other</option>
+                              </select>
+                              
                         <input type="number" name="monthly_revenue" placeholder="Monthly Revenue" required class="contact-form__input">
                           <input type="text" name="target_market" placeholder="Target Market Size" required class="contact-form__input">
 

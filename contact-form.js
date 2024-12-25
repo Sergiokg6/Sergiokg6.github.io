@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 100);
     }
        // Text animation for the contact-hero section
-          const contactHeroTitle = document.querySelector('.contact-hero__title');
-          const contactHeroDesc = document.querySelectorAll('.contact-hero__desc p');
-          if(contactHeroTitle) animateText(contactHeroTitle);
-            if(contactHeroDesc) {
-              contactHeroDesc.forEach(p => {
-                animateText(p);
-              })
-             }
+          // const contactHeroTitle = document.querySelector('.contact-hero__title');
+          // const contactHeroDesc = document.querySelectorAll('.contact-hero__desc p');
+          // if(contactHeroTitle) animateText(contactHeroTitle);
+          //   if(contactHeroDesc) {
+          //     contactHeroDesc.forEach(p => {
+          //       animateText(p);
+          //     })
+          //    }
 
        //Form
     const form = document.getElementById('contactForm');
