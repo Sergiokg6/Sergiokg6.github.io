@@ -427,39 +427,38 @@
      transform: translateY(0);
 }
 
-
 /* Trust Section */
 .trust-section {
     background-color: #fff;
     text-align: center;
-    padding: 40px 0;
+    padding: 20px 0;
 }
 .trust-section__title {
     margin-bottom: 20px;
     color: #000000;
     font-size: clamp(2rem, 4vw, 2.5em);
     overflow: hidden;
-     transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .trust-section__title span {
     display: inline-block;
-   transform: translateY(100%);
+    transform: translateY(100%);
     opacity: 0;
     transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.3s ease;
 }
 .trust-section__title.animate__fade-in-up span {
-     transform: translateY(0);
-     opacity: 1;
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .trust-section__logos {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-x: auto; /* Enable horizontal scrolling*/
-   scroll-snap-type: x mandatory;/*Scroll snapping*/
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
     position: relative;
-     padding: 10px 0;
+    padding: 10px 0;
 }
 
 .trust-section__logo-list {
@@ -469,18 +468,20 @@
 }
 
 .trust-section__logo-list img {
-    width: 180px;
-    height: auto;
-    object-fit: contain;
+    width: 130px; /* Set a fixed width */
+    height: 130px; /* Set a fixed height */
+    object-fit: cover;
     margin: 0 15px;
-      cursor: pointer;
-     scroll-snap-align: center;
-     transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), filter 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    cursor: pointer;
+    scroll-snap-align: center;
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), filter 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    display: inline-block; /* Set to inline-block*/
 }
 .trust-section__logo-list img:hover {
     transform: scale(1.1);
-   filter: brightness(1.1);
+    filter: brightness(1.1);
 }
+
 .trust-section__arrow {
     font-size: 2rem;
     border: none;
