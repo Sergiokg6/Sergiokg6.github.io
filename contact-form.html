@@ -86,9 +86,24 @@
     
         <!-- ========================== Analytics & 3rd Party Scripts ========================== -->
 
-        <!-- ========================== Google captcha verification ========================== -->
-        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-        
+        <script src="https://www.google.com/recaptcha/enterprise.js?render=6LeXLKgqAAAAADB_tTH0XQE6WbpBJFSdMgoOkWq9"></script>
+        <script>
+            document.getElementById("submit-button").addEventListener("click", function(event) {
+                event.preventDefault(); // Prevent the form from submitting immediately
+                grecaptcha.enterprise.ready(function() {
+                    grecaptcha.enterprise.execute('6LeXLKgqAAAAADB_tTH0XQE6WbpBJFSdMgoOkWq9', {action: 'submit'}).then(function(token) {
+                        // Add the token to the form as a hidden input field.
+                       let form = document.querySelector('form'); //selects the only form
+                       let tokenInput = document.createElement("input");
+                       tokenInput.setAttribute("type", "hidden");
+                       tokenInput.setAttribute("name", "g-recaptcha-response");
+                       tokenInput.setAttribute("value", token);
+                       form.appendChild(tokenInput);
+                       form.submit(); // Submit the form with the token
+                     });
+                });
+             });
+        </script>
         <!-- ========================== Accessibility ========================== -->
         <meta name="language" content="en">
         <meta name="distribution" content="global">
@@ -249,9 +264,11 @@
                     <div class="form-navigation">
                         <button type="button" class="prev-button form-button form-button--disabled" data-nav="prev" disabled>Previous</button>
                         <button type="button" class="next-button form-button" data-nav="next">Next</button>
-                        <button type="submit" class="submit-button form-button">Submit</button>
+                        <button
+                        type="submit" id="submit-button" class="submit-button form-button">Submit
+                        </button>
+
                     </div>
-                    <div class="g-recaptcha" data-sitekey="6LeXLKgqAAAAADB_tTH0XQE6WbpBJFSdMgoOkWq9"></div>
                  </form>
                 <p class="contact-form__privacy">By clicking the Subscribe button, you agree to the <a href="#">Privacy Policy</a>.</p>
             </div>
