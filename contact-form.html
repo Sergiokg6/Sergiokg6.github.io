@@ -1,14 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cleverest - Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="contact-form.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-
-</head>
+    <head>
+        <!-- ========================== Security & Performance ========================== -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <meta http-equiv="Content-Security-Policy" content="
+            default-src 'self';
+            script-src 'self' 'unsafe-inline';
+            style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+            font-src 'self' https://fonts.gstatic.com;
+            img-src 'self' data: https:;
+            connect-src 'self';
+            frame-src 'self';
+            frame-ancestors 'self';
+            form-action 'self';
+            base-uri 'self';
+            manifest-src 'self';
+            media-src 'self';
+            object-src 'none';
+            worker-src 'self' blob:;
+            upgrade-insecure-requests;
+            block-all-mixed-content"> -->
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+        <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+        <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+        <meta name="referrer" content="no-referrer">
+        <meta name="theme-color" content="#ff8000">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="style.css" as="style">
+        <link rel="preload" href="contact-form.css" as="style">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="contact-form.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+        <!-- ========================== Basic Metadata ========================== -->
+        <title>Contact Us - Reach the Cleverest Team for Your Data Needs</title>
+        <meta name="description" content="Contact the Cleverest team for expert data analysis, insights, and solutions. Get in touch with us to discuss your project, request a demo, or ask any questions.">
+        <meta name="keywords" content="contact us, cleverest, data analysis, data solutions, request demo, contact form, get in touch, data insights, expert support">
+        <link rel="canonical" href="https://cleverest.cl/contact-form" />
+    
+        <!-- ========================== Favicons ========================== -->
+        <link rel="icon" href="./assets/cleverest-super-wise-tree.png" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/cleverest-super-wise-tree.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/cleverest-super-wise-tree.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/cleverest-super-wise-tree.png">
+        <link rel="manifest" href="./site.webmanifest">
+    
+        <!-- ========================== Open Graph & Social Media ========================== -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Contact Us - Reach the Cleverest Team for Your Data Needs">
+        <meta property="og:description" content="Contact the Cleverest team for expert data analysis, insights, and solutions. Get in touch with us to discuss your project, request a demo, or ask any questions.">
+        <meta property="og:image" content="https://cleverest.cl/assets/cleverest-super-wise-tree.png">
+        <meta property="og:url" content="https://cleverest.cl/contact-form">
+        <meta property="og:site_name" content="Cleverest Contact">
+    
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Contact Us - Reach the Cleverest Team for Your Data Needs">
+        <meta name="twitter:description" content="Contact the Cleverest team for expert data analysis, insights, and solutions. Get in touch with us to discuss your project, request a demo, or ask any questions.">
+        <meta name="twitter:image" content="https://cleverest.cl/assets/cleverest-super-wise-tree.png">
+        <meta name="twitter:url" content="https://cleverest.cl/contact-form">
+        <meta name="twitter:site" content="@cleverest">
+        <meta name="twitter:creator" content="@cleverest">
+        
+        <!-- LinkedIn Meta Tags -->
+        <meta property="linkedin:title" content="Contact Us - Reach the Cleverest Team for Your Data Needs">
+        <meta property="linkedin:description" content="Contact the Cleverest team for expert data analysis, insights, and solutions. Get in touch with us to discuss your project, request a demo, or ask any questions.">
+        <meta property="linkedin:image" content="https://cleverest.cl/assets/cleverest-super-wise-tree.png">
+        <meta property="linkedin:url" content="https://www.linkedin.com/company/cleverest">
+    
+        <!-- WhatsApp Meta Tags -->
+        <meta name="whatsapp:title" content="Contact Us - Reach the Cleverest Team for Your Data Needs">
+        <meta name="whatsapp:card" content="Cleverest Contact" >
+        <meta name="whatsapp:image" itemprop="image" content="https://cleverest.cl/assets/cleverest-super-wise-tree.png">
+        <meta name="whatsapp:description" content="Contact the Cleverest team for expert data analysis, insights, and solutions. Get in touch with us to discuss your project, request a demo, or ask any questions.">
+    
+        <!-- Instagram Meta Tags -->
+        <meta name="instagram:title" content="Contact Us - Reach the Cleverest Team for Your Data Needs">
+        <meta name="instagramard" content="Cleverest Contact" >
+        <meta name="instagram:image" itemprop="image" content="https://cleverest.cl/assets/cleverest-super-wise-tree.png">
+        <meta name="instagram:description" content="Contact the Cleverest team for expert data analysis, insights, and solutions. Get in touch with us to discuss your project, request a demo, or ask any questions.">
+    
+        <!-- ========================== Analytics & 3rd Party Scripts ========================== -->
+        
+        <!-- ========================== Accessibility ========================== -->
+        <meta name="language" content="en">
+        <meta name="distribution" content="global">
+        
+        <!-- ========================== Additional Metadata ========================== -->
+        <meta name="robots" content="index, follow">
+    </head>
 <body class="body">
 
     <header class="header">
