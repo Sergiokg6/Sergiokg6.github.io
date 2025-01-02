@@ -1,0 +1,304 @@
+body {
+    font-family: 'Arial', sans-serif;
+
+}
+/* General Strategy Styles */
+.strategy-main {
+    width: 100%;
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    font-family: 'Arial', sans-serif;
+
+}
+    .strategy-hero {
+        background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
+        color: #fff;
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .strategy-hero__container {
+        width: 90%;
+         max-width: 1200px;
+         margin: 0 auto;
+
+    }
+    .strategy-hero__title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+         font-weight: 600;
+    }
+
+    .strategy-hero__subtitle {
+        font-size: 1.2rem;
+         font-weight: 300;
+    }
+
+    /* Pillars Section Styles */
+    .strategy-pillars {
+        padding: 50px 0;
+        text-align: center;
+    }
+   .strategy-pillars__container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+    }
+
+
+    .strategy-pillars__title {
+       font-size: 2.5rem;
+        margin-bottom: 40px;
+         font-weight: 600;
+    }
+      .strategy-pillars__list {
+           display: flex;
+           flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+      }
+
+    .strategy-pillar {
+        flex: 0 1 calc(30% - 20px);
+        background: #f8f8f8;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+         margin-bottom: 20px; /* Add margin at the bottom of each pillar */
+        min-width: 280px;
+
+    }
+    .strategy-pillar:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15)
+    }
+
+    .strategy-pillar__title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+     .strategy-pillar__image {
+           width: 100%; /* Make images responsive */
+        max-width: 200px; /* Set a maximum width */
+        height: auto; /* Maintain aspect ratio */
+        display: block;
+        margin: 0 auto 20px; /* Center the image */
+    }
+
+    .strategy-pillar__description {
+        font-size: 1rem;
+        line-height: 1.6;
+         margin-bottom: auto;
+    }
+
+    .strategy-pillar__button {
+        display: inline-block;
+        background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+
+    .strategy-pillar__button:hover {
+        background: linear-gradient(135deg, #2c3e50, #3498db); /* Dark Gradient */
+        color: #000;
+
+
+    }
+
+    /* Impact Section Styles */
+    .strategy-impact {
+        background: #f0f4f8;
+        padding: 50px 0;
+        text-align: center;
+    }
+    .strategy-impact__container {
+          width: 90%;
+          max-width: 1200px;
+          margin: 0 auto;
+    }
+
+    .strategy-impact__title {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+         font-weight: 600;
+    }
+
+    .strategy-impact__items {
+        display: flex;
+        flex-wrap: wrap;
+         justify-content: center;
+        gap: 20px;
+    }
+
+    .strategy-impact__item {
+       flex: 0 1 calc(23% - 20px);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background: white;
+        min-width: 250px;
+         margin-bottom: 20px; /* Add margin at the bottom of each item */
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+        gap: 15px
+    }
+
+    .strategy-impact__icon {
+         width: 80px;
+        height: auto; /* Maintain aspect ratio */
+    }
+    .strategy-impact__item-title {
+           font-size: 1.3rem;
+           margin-bottom: 10px;
+    }
+
+    .strategy-impact__item-description {
+        font-size: 1rem;
+         line-height: 1.5;
+          text-align: center;
+           margin-bottom: auto;
+    }
+
+    /* Call to Action Section Styles */
+    .strategy-call-to-action {
+        padding: 70px 0;
+        text-align: center;
+        background: linear-gradient(135deg, #000000, #2c3e50); /* Dark Gradient */
+        color: #fff;
+    }
+    .strategy-call-to-action__container {
+          width: 90%;
+         max-width: 1200px;
+         margin: 0 auto;
+    }
+
+    .strategy-call-to-action__title {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+         font-weight: 600;
+    }
+
+    .strategy-call-to-action__description {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+         font-weight: 300;
+    }
+
+    .strategy-call-to-action__button {
+         display: inline-block;
+        background: #fff;
+        color: #2c3e50;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+           font-weight: 600;
+    }
+
+    .strategy-call-to-action__button:hover {
+        background: #ecf0f1;
+    }
+
+    /* Responsive Design */
+@media(max-width: 768px){
+    .strategy-main {
+        padding-top: 60px;
+         padding-bottom: 30px;
+    }
+     .strategy-hero {
+          padding: 80px 0;
+        }
+    .strategy-hero__title {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        .strategy-hero__subtitle {
+            font-size: 1rem;
+        }
+     .strategy-pillars {
+            padding: 40px 0;
+        }
+        .strategy-pillars__title{
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+      .strategy-pillars__list {
+          gap: 20px;
+      }
+      .strategy-pillar {
+            flex: 0 1 calc(45% - 20px);
+           padding: 20px;
+            min-width: auto;
+        }
+        .strategy-pillar__title {
+           font-size: 1.3rem;
+        margin-bottom: 10px;
+        }
+    .strategy-pillar__description {
+           font-size: 0.9rem;
+         line-height: 1.5;
+        }
+        .strategy-impact {
+            padding: 40px 0;
+        }
+      .strategy-impact__title{
+             font-size: 2rem;
+             margin-bottom: 30px;
+         }
+         .strategy-impact__items {
+            gap: 15px;
+        }
+      .strategy-impact__item {
+           flex: 0 1 calc(45% - 15px);
+            padding: 15px;
+             min-width: auto;
+        }
+      .strategy-impact__icon {
+            width: 60px;
+        }
+    .strategy-impact__item-title {
+            font-size: 1.1rem;
+           margin-bottom: 8px;
+       }
+    .strategy-impact__item-description {
+           font-size: 0.9rem;
+        }
+      .strategy-call-to-action {
+            padding: 50px 0;
+        }
+    .strategy-call-to-action__title {
+            font-size: 2rem;
+             margin-bottom: 15px;
+        }
+      .strategy-call-to-action__description {
+           font-size: 1rem;
+          margin-bottom: 20px;
+      }
+        .strategy-call-to-action__button{
+          padding: 12px 24px
+        }
+}
+@media (max-width: 600px){
+       .strategy-pillars__list {
+          gap: 15px;
+      }
+    .strategy-pillar {
+         flex: 0 1 calc(90% - 15px);
+       }
+    .strategy-impact__items {
+            gap: 10px;
+        }
+      .strategy-impact__item {
+            flex: 0 1 calc(90% - 10px);
+       }
+}

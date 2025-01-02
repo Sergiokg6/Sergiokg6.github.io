@@ -45,7 +45,6 @@ a:hover {
 .header {
     background-color: transparent;
     border-bottom: none;
-    padding: 5px 0;
     margin: 0;
     position: sticky;
     top: 0;
@@ -57,9 +56,8 @@ a:hover {
 /*Header when scrolled down*/
 .header.scrolled {
     background-color: white;
-    border-bottom: 1px solid rgb(229, 229, 229);
+    /* border-bottom: 1px solid rgb(229, 229, 229); */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
 }
 
 .header__container {
@@ -83,14 +81,15 @@ a:hover {
 
 .header__logo:hover img {
     transform: scale(1.05) rotateX(360deg);
-     filter: brightness(1.1);
+    filter: brightness(1.1);
     animation: coinSpin 6s linear;
 }
 
 @keyframes coinSpin {
-    to { transform: scale(1.05) rotateX(360deg);
-          filter: brightness(1.1);
-     }
+    to { 
+        transform: scale(1.05) rotateX(360deg);
+        filter: brightness(1.1);
+    }
 }
 
 .header__nav {
@@ -132,18 +131,19 @@ a:hover {
 
 /* ComboBox styles*/
 .header__combobox{
-  position: relative;
-  margin-left: 15px;
+    position: relative;
+    margin-left: 15px;
 }
+
 .header__combobox-select {
-   padding: 5px 15px;
+    padding: 5px 15px;
     border: none;
-  background-color: transparent;
+    background-color: transparent;
     font-family: inherit;
-     font-size: 1em;
+    font-size: 1em;
     color: #333;
     cursor: pointer;
-   transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 .header__combobox-select:hover {
     color: #007bff;
@@ -159,51 +159,54 @@ a:hover {
     position: absolute;
     top: 100%;
     left: 0;
-     background-color: white;
+    background-color: white;
     border-radius: 5px;
-     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 5px 0;
-   min-width: 150px;
+    min-width: 150px;
     z-index: 1;
 }
 .header__combobox:hover .header__combobox-options,
  .header__combobox.active .header__combobox-options
   {
-  display: block;
+    display: block;
 }
 
 .header__combobox-options a{
-   display: block;
+    display: block;
     padding: 5px 15px;
-     color: #333;
+    color: #333;
     text-decoration: none;
-     transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 .header__combobox-options a:hover{
-  background-color: #f0f0f0;
+    background-color: #f0f0f0;
     color: #ff0000;
 }
 
 .header__contact-button {
-    background-color: #dc3545;
-   color: white;
+    background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
+    color: white;
     padding: 10px 15px;
     border-radius: 5px;
-   white-space: nowrap;
+    white-space: nowrap;
     transition: background-color 0.3s ease, transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header__contact-button:hover {
-    background-color: #c82333;
-     transform: scale(1.05);
+    /* background-color: #c82333; */
+    background: linear-gradient(135deg, #2c3e50, #0df); /* Dark Gradient */
+    transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    color: #000;
+    color: #ff0000;
 }
- .header__contact-button:focus {
-   outline: none;
-   box-shadow: 0 0 0 2px #c82333;
+
+.header__contact-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #c82333;
 }
+
 /* Mobile Menu */
 .header__menu-btn {
     display: none;
@@ -213,11 +216,11 @@ a:hover {
     height: 24px;
     cursor: pointer;
     padding: 2px;
-   transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
     position: absolute;
     top: 50%;
-     transform: translateY(-50%);
-     right: 20px;
+    transform: translateY(-50%);
+    right: 20px;
 }
 
 .header__menu-btn:hover{
@@ -231,7 +234,7 @@ a:hover {
 }
 
 .header__menu-btn.active span:nth-child(1) {
-  transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
 }
 
 .header__menu-btn.active span:nth-child(2) {
@@ -239,7 +242,7 @@ a:hover {
 }
 
 .header__menu-btn.active span:nth-child(3) {
-  transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
 }
 
 .header__mobile-menu {
@@ -251,14 +254,14 @@ a:hover {
     width: 100%;
     background-color: rgba(255, 255, 255, 1);
     padding-top: 20px; /* Added spacing */
-     z-index: 999;
-     opacity: 0;
-     pointer-events: none;
-       transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .header__mobile-menu.active {
     display: inline;
-     opacity: 1;
+    opacity: 1;
     pointer-events: auto;
 }
 
@@ -283,7 +286,7 @@ a:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  /* Mobile View */
+    /* Mobile View */
     .header__nav {
         display: none;
     }
@@ -297,17 +300,18 @@ a:hover {
         display: none;
     }
 
-     .header__menu-btn {
+    .header__menu-btn {
          display: flex;
-     }
+    }
 
     .header__logo img {
        width: 80px;
     }
 }
+
 @media (min-width: 769px) {
- .header__mobile-menu {
-      display: none !important;
+    .header__mobile-menu {
+        display: none !important;
     }
 }
 
@@ -563,10 +567,11 @@ a:hover {
     text-align: center;
     padding-top: 0;
     font-size: 0.9em;
-    color: #000;
+    color: #fff;
     line-height: 1.5;
     letter-spacing: 0.5px;
-    background-color: transparent;
+    background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
+
 }
 
 /* Responsive design */
@@ -576,13 +581,16 @@ a:hover {
         align-items: center;
         text-align: center;
     }
+
     .footer__left {
       align-items: center;
     }
+
     .footer__links {
         align-items: center;
     }
-     .footer__social-icons {
+
+    .footer__social-icons {
         justify-content: center;
     }
 }
@@ -592,7 +600,8 @@ a:hover {
     .container{
         width: 90%;
     }
-     section{
+
+    section{
         padding: 40px 0;
     }
 
@@ -601,40 +610,47 @@ a:hover {
         text-align: center;
         gap: 20px;
     }
+
     .hero__left{
         width: 100%;
         margin-bottom: 20px;
     }
+    
     .hero__title{
         font-size: 2.5em;
     }
+    
     .contact-form{
-       max-width: 100%;
+        max-width: 100%;
     }
 
     .trust-section__logo-list img{
-       margin: 0 10px;
+        margin: 0 10px;
     }
+    
     .services-section__container{
-      flex-direction: column;
+        flex-direction: column;
         gap: 30px;
         text-align: center;
     }
+    
     .services-section__description{
-       max-width: 100%;
+        max-width: 100%;
     }
+    
     .services-section__images{
-       width: 80%;
-       margin: 0 auto;
+        width: 80%;
+        margin: 0 auto;
     }
+    
     .blog-section__posts{
         flex-direction: column;
     }
-     .blog-section__post{
+    
+    .blog-section__post{
         width: 100%;
-         text-align: center;
+        text-align: center;
     }
-
 }
 
 

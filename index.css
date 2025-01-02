@@ -1,417 +1,109 @@
-/* Hero Section */
+
+/* Hero Section Styles */
 .hero {
     position: relative;
-    width: 100%;
-    height: 90vh;
+    height: 100vh;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    overflow: hidden;
+    position: relative;
 }
 
-.hero__parallax-bg {
-    background-image: url("./assets/cleverest-nobel-mind.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+.hero-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     z-index: 0;
-    opacity: 0.85;
-    filter: brightness(0.7);
-    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1) ;
 }
 
-/* Hero Content */
-.hero__container {
+.hero-container {
+    position: relative;
+    z-index: 2;
+    text-align: left;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 5%;
-    position: relative;
-    z-index: 1;
-    flex-wrap: wrap;
-    margin-top: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.hero__left {
-    flex: 1;
-    min-width: 300px;
-    max-width: 600px;
-    margin-bottom: 20px;
+.hero-text-overlay {
+    max-width: 70%;
+    padding: 20px;
+    /*     background-color: rgba(255, 255, 255, 0.1); /* Optional background for readability */
+    /*   border-radius: 8px; */
 }
 
-.hero__left a {
-    display: inline-block;
-  }
-
-.hero__left a img {
-    height: 50px;
-    width: 50px;
-    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) , filter 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-    position: relative;
-    z-index: 1;
-    transform-style: preserve-3d;
-}
-.hero__left a:hover img {
- transform: scale(1.15) rotateX(360deg) ;
- filter: brightness(1.1)
-}
-
-.hero__title {
-    font-size: clamp(2rem, 5vw, 4rem);
-    font-weight: 700;
-    color: #f9f9f9;
+.hero h1 {
+    color: #fff;
+    font-size: 4rem;
     line-height: 1.2;
     margin-bottom: 20px;
-    overflow: hidden;
-}
-.hero__title span {
-    display: inline-block;
-    transform: translateY(100%);
-    opacity: 0;
-    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.4s ease;
-}
-.hero__title.animate__fade-in-up span {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-
-/*highlight theme*/
-.hero__title {
-    margin-bottom: 30px;
-    color: #ffffff;
-    font-size: 2.8em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeInUp 1s ease-out;
     font-weight: 700;
-    letter-spacing: 1px;
-    text-align: center;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-    position: relative;
+}
+
+.highlight-text {
+    color: #40E0D0;
+}
+
+.btn-strategy {
     display: inline-block;
-    overflow: hidden;
-}
-.hero__title::before {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(to right, rgba(33, 71, 132, 0), #000000, rgba(33, 71, 132, 0));
-    transform: scaleX(0);
-    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-.hero__title:hover::before {
-    transform: scaleX(1);
-}
-
-.hero__title::after{
- content: '';
-    position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-    transform: scaleX(0);
-   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
-   z-index: -1;
-}
-
-.hero__title:hover::after {
-   transform: scaleX(1);
-}
-.hero__title {
-     transition: color 0.3s ease;
-}
-.hero__title:hover {
-     color: #fff;
-}
-/*end hightlight theme*/
-
-.hero__location,
-.hero__email {
-    font-size: clamp(1rem, 2.5vw, 1.2rem);
-    line-height: 1.8;
-    margin-bottom: 10px;
-    color: #f9f9f9;
-    overflow: hidden;
-}
-.hero__location span,
-.hero__email span {
-    display: inline-block;
-    transform: translateY(100%);
-    opacity: 0;
-     transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.3s ease;
-}
-.hero__location.animate__fade-in-up span,
-.hero__email.animate__fade-in-up span {
-    transform: translateY(0);
-     opacity: 1;
-}
-.hero__email {
-    position: relative;
-    overflow: hidden;
-      transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-.hero__email:hover{
-  transform: scale(1.03);
-}
-.hero__email::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(255,255,255,0.7);
-    transform: scaleX(0);
-    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1) , opacity 0.2s ease;
-    opacity: 0;
-}
-.hero__email:hover::before {
-    transform: scaleX(1);
-    opacity: 1;
-}
-.hero__email p{
-     transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-.hero__email:hover p {
-    color: #fff;
-    text-shadow: 0 0 8px #fff;
-    text-decoration: none;
-}
-
-.hero__email a {
-    color: #f9f9f9;
-    text-decoration: underline;
-   transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-.hero__email a:hover{
-    color: #fff;
-    text-shadow: 0 0 4px #fff;
-}
-
-/* Hero Right - Form Section */
-.hero__right {
-    flex: 1;
-    max-width: 300px;
-    background: rgba(0, 0, 0, 0.25);
-    padding: 50px;
-    padding-left: 30px;
-    padding-bottom: 50px;
-    padding-top: 30px;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transform: translateX(100%);
-    transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 0.4s ease;
-    opacity: 0;
-}
-.hero__right.animate__fade-in-right {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-.hero__right:hover {
-    transform: translateY(-8px);
-}
-
-.contact-form__textarea,
-.contact-form__input {
-    width: 100%;
-    padding: 12px;
-    margin: 0;
-    border: 1px dotted #ddd;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    font-size: 1rem;
-    font-family: 'Lato', sans-serif;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact-form__textarea::placeholder,
-.contact-form__input::placeholder {
-    font-size: 1rem;
-  position: relative;/* For the animation */
-  color: #000000; /* Set a default color for the text*/
-  overflow: hidden; /* Hiding the content overflow*/
-}
-.contact-form__textarea::before,
-.contact-form__input::before {
-    content: attr(placeholder);/* Get the placeholder attribute value*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    padding: 12px; /* Padding to make animation works correctly*/
-    color: #000000; /* Text color default*/
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;/* Avoid text wrap*/
-    opacity: 1;/* Full opacity*/
-    animation: cyclePlaceholder 10s linear infinite; /*Apply the animations*/
-}
-
-
-@keyframes cyclePlaceholder {
-  0% , 20%{
-       opacity: 1;
-       transform: translateX(0);
-
-    }
-     25% , 45%{
-        opacity: 0;
-         transform: translateX(-100%);
-     }
-     50% , 70%{
-      opacity: 0;
-          transform: translateX(100%);
-    }
-    75%, 95% {
-      opacity: 1;
-           transform: translateX(0);
-    }
-     100%{
-          opacity: 1;
-             transform: translateX(0);
-
-     }
-
-}
-
-.contact-form__textarea::after,
-.contact-form__input::after{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    height: 1px;
-    background-color: rgba(0,0,0,0.2);
-    width: 0%;
-    transition: width 0.3s ease;
-}
-
-.contact-form__textarea:focus::after,
-.contact-form__input:focus::after{
-    width: 100%;
-}
-
-
-.contact-form__textarea:focus,
-.contact-form__input:focus {
-    outline: none;
-    border-color: #fff;
-}
-
-.contact-form__button {
-    width: 100%;
-    background-color: #ff0023;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 10px;
-    font-size: 1rem;
+    background-color: #fff;
+    color: #333;
+    padding: 12px 24px;
+    border-radius: 4px;
     font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 1px solid #c82333;
+    margin-top: 20px;
 }
 
-.contact-form__button:hover {
-    background-color: #ff0000;
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    color: #000000;
+.btn-strategy:hover {
+    background-color: #c82333;
+    color: #fff;
 }
- .contact-form__button:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.4);
-}
-.contact-form__button {
-    position: relative;
-    overflow: hidden;
-}
-.contact-form__button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
-    transition: left 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), background-color 0.3s ease, color 0.3s ease ;
-     z-index: -1;
-}
-.contact-form__button:hover::before {
-     left: 0;
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text-overlay {
+        max-width: 90%;
+    }
 }
 
 
 /* Responsive Design */
 @media (max-width: 768px) {
-     .hero {
-        height: auto;
-     }
-    .hero__container {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 20px;
+    .hero h1 {
+        font-size: 2.5rem;
     }
 
-    .hero__left,
-    .hero__right {
-        width: 100%;
-        margin-bottom: 15px;
+    .hero-text-overlay {
+        max-width: 90%;
     }
-    .hero__right {
-        max-width: 80%;
-        padding: 20px;
-       padding-right: 45px;
-    }
-    .contact-form__textarea,
-    .contact-form__input {
-        margin-bottom: 10px;
-    }
-      .hero__title {
-        font-size: 2rem;
-     }
 
-    .hero__location,
-    .hero__email {
-        font-size: 1rem;
+    .btn-strategy {
+        padding: 10px 20px;
     }
+
 }
 
 @media (max-width: 480px) {
-  .hero__container{
-    padding: 20px 10px;
-   }
-    .hero__title {
-        font-size: 1.6rem;
+    .hero h1 {
+        font-size: 2rem;
     }
 
-    .hero__location,
-    .hero__email {
-        font-size: 0.9rem;
-    }
-     .contact-form__textarea::placeholder,
-     .contact-form__input::placeholder{
-       font-size: 0.9rem;
-     }
-     .contact-form__button {
-       font-size: 0.9rem;
-        padding: 10px;
-    }
 }
 
 .error-message {
@@ -429,7 +121,8 @@
 
 /* Trust Section */
 .trust-section {
-    background-color: #fff;
+    background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
+
     text-align: center;
     padding: 20px 0;
 }
@@ -576,7 +269,7 @@
 
 /* Services Section */
 .services-section {
-    background-color: #fff;
+    background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
 }
 
 .services-section__container {
@@ -592,10 +285,11 @@
 .services-section__title {
     margin-bottom: 10px;
     color: #000000;
-     font-size: 2.5em;
+    font-size: 2.5em;
 }
 .services-section__description p{
     line-height: 1.6;
+    color: #fff;
 }
 
 .services-section__images {
@@ -762,7 +456,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
     z-index: 0;
     background-attachment: fixed;
 }
