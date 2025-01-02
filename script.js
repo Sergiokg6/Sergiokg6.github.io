@@ -168,4 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 
+    //Update footer bottom date automatically
+    document.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} - INCORPORATED RIGHTS TO CLEVEREST EXPLORATION CORP.`;
 });
+
