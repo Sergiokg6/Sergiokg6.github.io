@@ -109,7 +109,7 @@
   width: 100%;
   max-height: 300px;
   object-fit: cover;
-   border-radius: 8px;
+  border-radius: 8px;
   margin-bottom: 15px;
   transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1), filter 0.3s ease;
 }
@@ -129,6 +129,28 @@
 .team-members__item p {
   color: #444;
     line-height: 1.6;
+}
+
+.team-members__social{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 0;
+}
+
+.team-members__social-link {
+  display: inline-block; /* Make the links act as block elements */
+  padding: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.team-members__social-link:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* Add a subtle background on hover */
+}
+
+.team-members__social-icon{
+  width: 20px;
+  height: 20px;
 }
 
 
