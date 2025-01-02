@@ -567,6 +567,7 @@ a:hover {
 .footer__copyright {
     text-align: center;
     padding-top: 0;
+    padding: 5px;
     font-size: 0.9em;
     color: #fff;
     line-height: 1.5;
