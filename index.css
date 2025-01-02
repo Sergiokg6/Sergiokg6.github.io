@@ -121,7 +121,7 @@
 
 /* Trust Section */
 .trust-section {
-    background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
+    background-color: #fff;
 
     text-align: center;
     padding: 20px 0;
@@ -269,7 +269,7 @@
 
 /* Services Section */
 .services-section {
-    background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
+    background-color: #fff;
 }
 
 .services-section__container {
@@ -289,7 +289,7 @@
 }
 .services-section__description p{
     line-height: 1.6;
-    color: #fff;
+    color: #000;
 }
 
 .services-section__images {
@@ -456,7 +456,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, #2c3e50, #000000); /* Dark Gradient */
+    background-color: #fff;
     z-index: 0;
     background-attachment: fixed;
 }
