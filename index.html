@@ -1,292 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Page Metadata -->
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="distribution" content="global">
-
-    <!-- START Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J82PTZH5VC"></script>
-    
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-J82PTZH5VC');
-    </script>
-    <!-- END Google tag (gtag.js) -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-
-    <!-- Open Graph Meta Tags (for Social Media Sharing) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Give value to your Data with Cleverest">
-    <meta property="og:description" content=".">
-    <meta property="og:image" content="./assets/cleverest-super-wise-tree.png">
-    <meta property="og:url" content="https://cleverest.cl">
-    <meta property="og:site_name" content="Cleverest | Full Data Warehouse | AI">
-       
-    <!-- Permissions Policy -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="pageKey" content="p_mwlite_profile_view">
-    <meta name="description" content="En Cleverest.cl potenciamos la cadena de valor de datos mediante soluciones de inteligencia artificial innovadoras y personalizadas. Transformamos datos en decisiones estratégicas para optimizar el rendimiento empresarial, integrando análisis avanzado, machine learning y automatización. Descubre cómo impulsamos tu transformación digital con tecnología de vanguardia, consultoría experta y herramientas inteligentes para un futuro más eficiente y conectado.">
-    <meta name="keywords" content="Cleverest.cl, inteligencia artificial, AI, cadena de valor, data, big data, machine learning, análisis de datos, valor de datos, optimización de datos, transformación digital, gestión de datos, modelos predictivos, algoritmos, soluciones personalizadas, automatización, innovación tecnológica, eficiencia empresarial, estrategia de datos, inteligencia empresarial, procesamiento de datos, análisis avanzado, visualización de datos, aprendizaje automático, toma de decisiones, business intelligence, integración de datos, plataformas digitales, herramientas de datos, tecnología AI, soluciones inteligentes, análisis predictivo, rendimiento empresarial, datos estructurados, datos no estructurados, transformación empresarial, insights accionables, ciencia de datos, inteligencia digital, ecosistema de datos, sistemas inteligentes, tecnología disruptiva, valor estratégico, procesos automatizados, optimización de procesos, consultoría AI, arquitectura de datos, minería de datos, análisis en tiempo real, ingeniería de datos, infraestructura tecnológica, innovación empresarial.">
-    
-    <meta property="og:site_name" content="cleverest">
-    <meta https-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="i18nDefaultLocale" content="en_US">
-    <meta name="i18nLocale" content="en_US">
-    <meta name="requestIpCountryCode" content="cl">
-
-    <meta name="whatsapp:title" content="Cleverest AI to your Data">
-    <meta name="whatsapp:card" content="Give utility to your Data" >
-    <meta name="whatsapp:image" itemprop="image" content="./assets/cleverest-nobel-mind.png">
-    <meta name="whatsapp:description" content="En Cleverest.cl potenciamos la cadena de valor de datos mediante soluciones de inteligencia artificial innovadoras y personalizadas. Transformamos datos en decisiones estratégicas para optimizar el rendimiento empresarial, integrando análisis avanzado, machine learning y automatización. Descubre cómo impulsamos tu transformación digital con tecnología de vanguardia, consultoría experta y herramientas inteligentes para un futuro más eficiente y conectado.">
-    
-
-    <meta name="instagram:title" content="Cleverest | DATA WAREHOUSE | AI">
-    <meta name="instagramard" content="Give utility to your Data" >
-    <meta name="instagram:image" itemprop="image" content="./assets/cleverest-nobel-mind.png">
-    <meta name="instagram:description" content="En Cleverest.cl ofrecemos soluciones de data warehouse end-to-end, integrando gestión, análisis y optimización de datos con inteligencia artificial para maximizar el valor estratégico.">
-    
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Cleverest | DATA WAREHOUSE | AI">
-    <meta name="twitter:description" content="En Cleverest.cl ofrecemos soluciones de data warehouse end-to-end, integrando gestión, análisis y optimización de datos con inteligencia artificial para maximizar el valor estratégico.">
-    <meta name="twitter:image" content="./assets/cleverest-nobel-mind.png">
-    <meta name="twitter:url" content="https://x.com/cleverest_cl">
-    <meta name="twitter:site" content="cleverest">
-    <meta name="twitter:creator" content="cleverest">
-
-    <!-- LinkedIn Meta Tags -->
-    <meta property="linkedin:title" content="Cleverest | DATA WAREHOUSE | AI">  
-    <meta property="linkedin:description" content="En Cleverest.cl ofrecemos soluciones de data warehouse end-to-end, integrando gestión, análisis y optimización de datos con inteligencia artificial para maximizar el valor estratégico.">
-    <meta property="linkedin:image" content="./assets/cleverest-nobel-mind.png">
-    <meta property="linkedin:url" content="https://www.linkedin.com/in/cleverest">    
-    <meta property="linkedin:site" content="cleverest">
-    <meta property="linkedin:creator" content="cleverest">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/cleverest-super-wise-tree.png" type="image/x-icon">
-    <title>Cleverest - Insights from your DATA with AI</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
-</head>
-<body class="body">
-
-    <header class="header">
-        <div class="header__container">
-            <a href="index" class="header__logo lazy-load"><img src="./assets/cleverest-super-wise-tree.png" alt="Cleverest Logo"></a>
-            <nav class="header__nav">
-                <a href="index" class="header__link">Home</a>
-                <div class="header__combobox">
-                    <button class="header__combobox-select">Services</button>
-                    <div class="header__combobox-options">
-                       <a href="national-cleverest">National Cleverest</a>
-                       <a href="advanced-analytics">Advanced Analytics</a>
-                    </div>
-               </div>
-                <a href="our-team" class="header__link">Our Team</a>
-                <a href="blog" class="header__link">Blog</a>
-            </nav>
-            <a href="contact-form" class="header__contact-button">CONTACT US</a>
-             <div class="header__menu-btn">
-                <span></span>
-                <span></span>
-                <span></span>
-             </div>
-        </div>
-        <nav class="header__mobile-menu">
-            <a href="index" class="header__link">Home</a>
-            <div class="header__combobox">
-                <button class="header__combobox-select">Services</button>
-                <div class="header__combobox-options">
-                   <a href="national-cleverest">National Cleverest</a>
-                   <a href="advanced-analytics">Advanced Analytics</a>
-                </div>
-            </div>
-            <a href="our-team" class="header__link">Our Team</a>
-            <a href="blog" class="header__link">Blog</a>
-            <a href="contact-form" class="header__link">CONTACT US</a>
-        </nav>
-    </header>
-
-    <section class="hero fade-in">
-        <video autoplay loop muted playsinline class="hero-video">
-            <source src="https://cleverest.cl/video/DATA-ANALYTICS-CLEVEREST.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="hero-container">
-            <div class="hero-text-overlay">
-                <h1>We Turn <span class="highlight-text">Your Data</span> into valuable <span class="highlight-text">Insights</span></h1>
-                <a href="our-strategy" class="btn-strategy">OUR STRATEGY →</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="trust-section">
-        <div class="container trust-section__container">
-            <h2 class="trust-section__title animate__fade-in-up blog-section__title">THEY TRUST US</h2>
-            <div class="trust-section__logos">
-                <!-- <button class="trust-section__arrow trust-section__arrow--prev"></button> -->
-                <div class="trust-section__logo-list">
-                    <img src="./assets/trust-us-section/cleverest-thomas-alba-edison.png" data-src="./assets/trust-us-section/cleverest-thomas-alba-edison.png" alt="Anglo American">
-                    <img src="./assets/trust-us-section/cleverest-albert-einstain.png" data-src="./assets/trust-us-section/cleverest-albert-einstain.png" alt="Antofagasta Minerals">
-                    <img src="./assets/trust-us-section/cleverest-geoffrey-hinton.png" data-src="./assets/trust-us-section/cleverest-geoffrey-hinton.png" alt="Enaex">
-                    <img src="./assets/trust-us-section/cleverest-hess-victor-franz.png" data-src="./assets/trust-us-section/cleverest-hess-victor-franz.png" alt="Calidda">
-                    <img src="./assets/trust-us-section/cleverest-erwin-schrödinger-nobel-mind.png" data-src="./assets/trust-us-section/cleverest-erwin-schrödinger-nobel-mind.png" alt="Kaufmann">
-                    <img src="./assets/trust-us-section/cleverest-john-adams.png" data-src="./assets/trust-us-section/cleverest-john-adams.png" alt="Anglo American">
-                    <img src="./assets/trust-us-section/cleverest-nikola-tesla.png" data-src="./assets/trust-us-section/cleverest-nikola-tesla.png" alt="Antofagasta Minerals">
-                    <img src="./assets/trust-us-section/cleverest-j-p-morgan.png" data-src="./assets/trust-us-section/cleverest-j-p-morgan.png" alt="Enaex">
-                    <img src="./assets/trust-us-section/cleverest-john-d-rockefeller.png" data-src="./assets/trust-us-section/cleverest-john-d-rockefeller.png" alt="Calidda">
-                    <img src="./assets/trust-us-section/cleverest-paul-dirac-nobel-mind.png" data-src="./assets/trust-us-section/cleverest-paul-dirac-nobel-mind.png" alt="Kaufmann">
-                    <img src="./assets/trust-us-section/cleverest-niels-bohr.png" data-src="./assets/trust-us-section/cleverest-niels-bohr.png" alt="Kaufmann">
-                    <img src="./assets/trust-us-section/cleverest-marie-curie-nobel-mind.png" data-src="./assets/trust-us-section/cleverest-marie-curie-nobel-mind.png" alt="Kaufmann">
-                    <img src="./assets/trust-us-section/cleverest-werner-heisenberg-nobel-mind.png" data-src="./assets/trust-us-section/cleverest-werner-heisenberg-nobel-mind.png" alt="Kaufmann">
- 
-
-                </div>
-                <!-- <button class="trust-section__arrow trust-section__arrow--next"></button> -->
-            </div>
-            <!-- <div class="trust-section__logo-indicators">
-                <span class="trust-section__logo-indicator trust-section__logo-indicator--active"></span>
-                <span class="trust-section__logo-indicator"></span>
-                <span class="trust-section__logo-indicator"></span>
-            </div> -->
-        </div>
-    </section>
-
-    <section class="services-section">
-        <canvas></canvas>
-        <div class="container services-section__container">
-            <div class="services-section__description">
-                <h2 class="services-section__title animate__fade-in-up blog-section__title">Cleverest Countries Suite</h2>
-                <p class="animate__fade-in-up">AI for the optimization of the nations loading and haulage process</p>
-                <p class="animate__fade-in-up"><b>Predictive and prescriptive digital twin</b> that, in real time, optimizes through artificial intelligence the complex decisions that the nations dispatcher makes on FMS, in the process of loading and transporting mines in real time.</p>
-                <p class="animate__fade-in-up">The software does not replace, but <b>interacts with any of the FMS and Dispatch Systems</b> currently used in nations, closing the gaps that these solutions currently have.</p>
-                <p class="animate__fade-in-up"><b>National Cleverest</b> acts as a <b>Co-Pilot and assistant</b> to the dispatcher, empowering and improving the quality of life of each nation's employees.</p>
-                <a href="#" class="services-section__learn-more-button animate__fade-in-up">LEARN MORE</a>
-            </div>
-
-            <div class="services-section__images animate__fade-in-left">
-               <img class="lazy-load" data-src="./assets/Cleverest-Website.gif" alt="Service image">
-            </div>
-        </div>
-    </section>
-    <section class="ai-section">
+    <head>
+        <!-- Page Metadata -->
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <meta name="distribution" content="global">
         
-        <div class="container ai-section__container">
-            <!-- <div style="width: 500px;"><canvas id="dimensions"></canvas></div><br/> -->
-            <div style="width: 800px;"><canvas id="acquisitions"></canvas></div>
-            
-            
-            <h2 class="ai-section__title animate__fade-in-up blog-section__title"><span>A. I. </span>for <span>mobility</span> & <span>operations</span></h2>
-            <p class="ai-section__desc animate__fade-in-up"><span>ARTIFICIAL</span> <span>INTELLIGENCE</span> <span>AT</span> <span>THE</span> <span>SERVICE</span> <span>OF</span> <span>PROCESSES</span> <span>IN</span> <span>THE</span> <span>PHYSICAL</span> <span>WORLD</span></p>
-        </div>
-        <img src="./assets/analytics-hero.png" alt="">
-    </section>
+        <!-- START Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J82PTZH5VC"></script>
+        
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'G-J82PTZH5VC');
+        </script>
+        <!-- END Google tag (gtag.js) -->
     
-    <!-- <script type="module" src="dimensions.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js" integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
     
-    <!-- <script type="module" src="./acquisitions.js"></script> 
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-
-    <section class="blog-section">
-        <div class="blog-section__content">
-            <canvas></canvas>
-            <h2 class="blog-section__title">Latest Insights & Articles</h2>
-            <div class="blog-section__posts">
-                <div class="blog-section__post">
-                    <img src="./assets/cleverest-the-future-of-ai-in-business.png" alt="Blog Post Image"  class="lazy-load"  data-src="./assets/cleverest-the-future-of-ai-in-business.png" >
-                    <h3 class="blog-section__post-title">The Future of AI in Business</h3>
-                    <p class="blog-section__post-author">By John Doe</p>
-                    <p class="blog-section__post-author-desc">A deep dive into how artificial intelligence is reshaping modern business practices.</p>
-                </div>
-                <div class="blog-section__post">
-                    <img src="./assets/cleverest-data-analysis-in-the-ai-age.png" alt="Blog Post Image" class="lazy-load"  data-src="./assets/cleverest-data-analysis-in-the-ai-age.png" >
-                    <h3 class="blog-section__post-title">Data Analysis Strategies</h3>
-                    <p class="blog-section__post-author">By Jane Smith</p>
-                    <p class="blog-section__post-author-desc">Explore effective techniques and tools for extracting valuable insights from your data.</p>
-                </div>
-                <div class="blog-section__post">
-                    <img src="./assets/cleverest-breakthrough-ai-technology.png" alt="Blog Post Image" class="lazy-load"  data-src="./assets/cleverest-breakthrough-ai-technology.png" >
-                    <h3 class="blog-section__post-title">Machine Learning Breakthroughs</h3>
-                    <p class="blog-section__post-author">By David Lee</p>
-                    <p class="blog-section__post-author-desc">Discover the latest advancements and applications of machine learning algorithms.</p>
-                </div>
-                <div class="blog-section__post">
-                    <img src="./assets/cleverest-empower-businesses-with-ai.png" alt="Blog Post Image" class="lazy-load"  data-src="./assets/cleverest-empower-businesses-with-ai.png" >
-                    <h3 class="blog-section__post-title">AI-Powered Automation</h3>
-                    <p class="blog-section__post-author">By Laura Martinez</p>
-                    <p class="blog-section__post-author-desc">Learn about how to enhance your company's automation with intelligent AI solutions.</p>
-                </div>
-                <div class="blog-section__post">
-                    <img src="./assets/cleverest-ethical-considerations-of-ai.png" alt="Blog Post Image" class="lazy-load"  data-src="./assets/cleverest-ethical-considerations-of-ai.png" >
-                    <h3 class="blog-section__post-title">Ethical Considerations of AI</h3>
-                    <p class="blog-section__post-author">By Micheal Brown</p>
-                    <p class="blog-section__post-author-desc">Discussing the responsible and ethical considerations of AI technologies.</p>
-                </div>
-                 <div class="blog-section__post">
-                    <img src="./assets/cleverest-advanced-global-trends-data-visualization.png" alt="Blog Post Image" class="lazy-load"  data-src="./assets/cleverest-advanced-global-trends-data-visualization.png" >
-                    <h3 class="blog-section__post-title">Advanced Data Visualization</h3>
-                    <p class="blog-section__post-author">By Emily Wilson</p>
-                     <p class="blog-section__post-author-desc">Techniques for presenting your data in an impactful and engaging ways.</p>
-                 </div>
-            </div>
-        </div>
-    </section>
-
+        <!-- Open Graph Meta Tags (for Social Media Sharing) -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Give value to your Data with Cleverest">
+        <meta property="og:description" content=".">
+        <meta property="og:image" content="./assets/cleverest-super-wise-tree.png">
+        <meta property="og:url" content="https://cleverest.cl">
+        <meta property="og:site_name" content="Cleverest | Full Data Warehouse | AI">
+           
+        <!-- Permissions Policy -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+        <meta name="pageKey" content="p_mwlite_profile_view">
+        <meta name="description" content="En Cleverest.cl potenciamos la cadena de valor de datos mediante soluciones de inteligencia artificial innovadoras y personalizadas. Transformamos datos en decisiones estratégicas para optimizar el rendimiento empresarial, integrando análisis avanzado, machine learning y automatización. Descubre cómo impulsamos tu transformación digital con tecnología de vanguardia, consultoría experta y herramientas inteligentes para un futuro más eficiente y conectado.">
+        <meta name="keywords" content="Cleverest.cl, inteligencia artificial, AI, cadena de valor, data, big data, machine learning, análisis de datos, valor de datos, optimización de datos, transformación digital, gestión de datos, modelos predictivos, algoritmos, soluciones personalizadas, automatización, innovación tecnológica, eficiencia empresarial, estrategia de datos, inteligencia empresarial, procesamiento de datos, análisis avanzado, visualización de datos, aprendizaje automático, toma de decisiones, business intelligence, integración de datos, plataformas digitales, herramientas de datos, tecnología AI, soluciones inteligentes, análisis predictivo, rendimiento empresarial, datos estructurados, datos no estructurados, transformación empresarial, insights accionables, ciencia de datos, inteligencia digital, ecosistema de datos, sistemas inteligentes, tecnología disruptiva, valor estratégico, procesos automatizados, optimización de procesos, consultoría AI, arquitectura de datos, minería de datos, análisis en tiempo real, ingeniería de datos, infraestructura tecnológica, innovación empresarial.">
+        
+        <meta property="og:site_name" content="cleverest">
+        <meta https-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="i18nDefaultLocale" content="en_US">
+        <meta name="i18nLocale" content="en_US">
+        <meta name="requestIpCountryCode" content="cl">
     
+        <meta name="whatsapp:title" content="Cleverest AI to your Data">
+        <meta name="whatsapp:card" content="Give utility to your Data" >
+        <meta name="whatsapp:image" itemprop="image" content="./assets/cleverest-nobel-mind.png">
+        <meta name="whatsapp:description" content="En Cleverest.cl potenciamos la cadena de valor de datos mediante soluciones de inteligencia artificial innovadoras y personalizadas. Transformamos datos en decisiones estratégicas para optimizar el rendimiento empresarial, integrando análisis avanzado, machine learning y automatización. Descubre cómo impulsamos tu transformación digital con tecnología de vanguardia, consultoría experta y herramientas inteligentes para un futuro más eficiente y conectado.">
+        
+    
+        <meta name="instagram:title" content="Cleverest | DATA WAREHOUSE | AI">
+        <meta name="instagramard" content="Give utility to your Data" >
+        <meta name="instagram:image" itemprop="image" content="./assets/cleverest-nobel-mind.png">
+        <meta name="instagram:description" content="En Cleverest.cl ofrecemos soluciones de data warehouse end-to-end, integrando gestión, análisis y optimización de datos con inteligencia artificial para maximizar el valor estratégico.">
+        
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Cleverest | DATA WAREHOUSE | AI">
+        <meta name="twitter:description" content="En Cleverest.cl ofrecemos soluciones de data warehouse end-to-end, integrando gestión, análisis y optimización de datos con inteligencia artificial para maximizar el valor estratégico.">
+        <meta name="twitter:image" content="./assets/cleverest-nobel-mind.png">
+        <meta name="twitter:url" content="https://x.com/cleverest_cl">
+        <meta name="twitter:site" content="cleverest">
+        <meta name="twitter:creator" content="cleverest">
+    
+        <!-- LinkedIn Meta Tags -->
+        <meta property="linkedin:title" content="Cleverest | DATA WAREHOUSE | AI">  
+        <meta property="linkedin:description" content="En Cleverest.cl ofrecemos soluciones de data warehouse end-to-end, integrando gestión, análisis y optimización de datos con inteligencia artificial para maximizar el valor estratégico.">
+        <meta property="linkedin:image" content="./assets/cleverest-nobel-mind.png">
+        <meta property="linkedin:url" content="https://www.linkedin.com/in/cleverest">    
+        <meta property="linkedin:site" content="cleverest">
+        <meta property="linkedin:creator" content="cleverest">
 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>cleverest.cl - Transformando Datos en Inteligencia</title>
+        <meta name="description" content="cleverest.cl: Impulsamos la transformación digital con IA. Analizamos datos, creamos agentes inteligentes y ofrecemos servicios de vanguardia para llevar su empresa al mundo digital.">
+        <meta name="author" content="templatemo">
+        <!-- 
+        Multi Profile
+        http://www.templatemo.com/preview/templatemo_457_multi_profile
+        -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/cleverest-main-style.css" rel="stylesheet">
 
-    <footer class="footer" id="footer">
-        <div class="container footer__container">
-            <div class="footer__left">
-                <a href="#"><img src="./assets/cleverest-super-wise-tree.png" alt="Cleverest Logo" class="footer__logo"></a>
-                <h4><span></span>PARTNERSHIP WITH <span class="footer__minnovex">GOOGLE STUDIO</span><span></span></h4>
-            </div>
-            <div class="footer__middle">
-                <div class="footer__links">
-                    <div class="footer__about">
-                        <h4 class="footer__links-title">About us</h4>
-                        <a href="our-team">Our team</a>
-                        <a href="#">Work with us</a>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body class="templatemo-container">
+        <!-- header -->
+        <div class="header-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-4 site-name-container">
+                        <img src="img/logo.png" alt="Site logo" class="site-logo">
+                        <h1 class="site-name">Cleverest</h1>
                     </div>
-                    <div class="footer__services">
-                        <h4 class="footer__links-title">Our Services</h4>
-                        <a href="advanced-analytics">Advanced Analytics</a>
-                        <a href="#">Cleverest Safe TMS</a>
-                        <a href="national-cleverest">National Cleverest</a>
+                    <div class="mobile-menu-icon">
+                        <i class="fa fa-bars"></i>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-sm-8 templatemo-nav-container">
+                        <nav class="templatemo-nav">
+                            <ul>
+                                <li><a href="index.html" class="active">Inicio</a></li>
+                                <li><a href="about.html">Acerca de</a></li>
+                                <li><a href="profile.html">Perfil</a></li>
+                                <li><a href="contact.html">Contacto</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <div class="footer__right">
-                <h4 class="footer__links-title">Follow us</h4>
-                <div class="footer__social-icons">
-                    <a href="https://facebook.com"><img src="./assets/facebook-icon-cleverest.svg" alt="Facebook icon" style="width: 20px"></a>
-                    <a href="https://linkedin.com"><img src="./assets/linkedin-icon-cleverest.svg" alt="LinkedIn icon" style="width: 20px"></a>
-                    <a href="https://x.com"><img src="./assets/x-icon-cleverest.svg" alt="X icon" style="width: 20px"></a>
-                    <a href="https://instagram.com"><img  src="./assets/instagram-icon-cleverest.svg" alt="Instagram icon" style="width: 20px"></a>
-                    <a href="mailto:adonias@cleverest.cl"><img src="./assets/gmail-icon-cleverest.svg" alt="Gmail icon" style="width: 20px"></a>
-                    
+        </div>
+        <!-- end header -->
+        <!-- header image -->
+        <div class="header-img"></div>
+        <!-- end header image -->
+        <!-- Welcome message -->
+        <div class="welcome-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="welcome-wrapper">
+                            <h2 class="welcome-title text-uppercase">Bienvenido a Cleverest.cl</h2>
+                             <img src="img/welcome-divider-lines.png" alt="Welcome divider" class="welcome-divider-lines-img">
+                            <p class="welcome-description">
+                                En Cleverest.cl, transformamos sus datos en inteligencia accionable. Somos su aliado estratégico en la digitalización y la era de la IA, ofreciendo servicios de vanguardia para llevar su empresa al siguiente nivel.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer__copyright">
-            <p></p>
-        </div>
-    </footer>
-    <script src="./script.js"></script>
-    <script src="./index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <!-- Welcome message -->
+        <!-- main content -->
+        <section class="templatemo-container section-shadow-bottom" id="services-artificial-intelligence">
+            <div class="container">
+                <div class="row section-title-container">
+                    <div class="col-lg-12 text-uppercase text-center">
+                         <h2 class="section-title">Inteligencia Artificial</h2>
+                        <div class="section-title-underline-blue"></div>
+                         <hr class="section-title-underline">
+                        <p class="small">El Poder de la IA en tu Empresa</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <h3 class="section-title-2 text-uppercase font-weight-300"><b>Análisis de</b> <span class="blue-text">Datos</span></h3>
+                         <p>En Cleverest.cl, usamos algoritmos de IA para analizar sus datos, identificando patrones y brindando recomendaciones para un mejor uso de la información.  Nuestro objetivo es maximizar el potencial de sus datos a través de análisis y visualizaciones detalladas. </p>
+                         <ul class="gray-text ul-1">
+                            <li>Análisis predictivo y descriptivo</li>
+                            <li>Visualización de datos y dashboards</li>
+                            <li>Identificación de patrones y tendencias clave</li>
+                        </ul>
+                        <a href="#" class="btn-blue-gradient">Nuestras Soluciones</a>
+                       <a href="#" class="btn-transparent">Contáctenos</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="carousel-container">
+                            <div class="crsl-items" data-navigation="navbtns">
+                                <div class="crsl-wrap">
+                                    <figure class="crsl-item">
+                                        <img src="img/1.jpg" alt="Image" class="img-responsive img-thumbnail">
+                                    </figure>
+                                    <figure class="crsl-item">
+                                        <img src="img/cleverest-carrousel-mit-ai-money.png" alt="Image" class="img-responsive img-thumbnail">
+                                    </figure>
+                                    <figure class="crsl-item">
+                                        <img src="img/cleverest-carrousel-mit-image-llm.png" alt="Image" class="img-responsive img-thumbnail">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>   <!-- carousel-container -->
+                         <div id="navbtns" class="crsl-nav">
+                            <a href="#" class="previous">
+                                <img src="img/carousel-arrow-previous.png" alt="previous">
+                            </a>
+                            <a href="#" class="next">
+                                <img src="img/carousel-arrow-next.png" alt="next">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end section content -->
+            </div>
+        </section>
+        <!-- Who We Are -->
+        <section class="templatemo-container light-gray-bg section-shadow-bottom">
+            <div class="container">
+                <div class="row section-title-container">
+                    <div class="col-lg-12 text-uppercase text-center">
+                        <h2 class="section-title">Quienes Somos</h2>
+                        <div class="section-title-underline-blue"></div>
+                        <hr class="section-title-underline">
+                         <p class="small">Cleverest.cl - Su socio estratégico en la era de la IA</p>
+                    </div>
+                </div> <!-- row -->
+                <div class="row">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="tm-blocks-container effect1">
+                             <div class="tm-block green-bg">
+                                <a href="#" class="tm-block-link">Agentes de IA</a>
+                            </div>
+                            <div class="tm-block">
+                                <img src="img/cleverest-ai-agent-first-image-section.png" alt="Image" class="img-responsive">
+                            </div>
+                             <div class="tm-block">
+                                <img src="img/cleverest-ai-agent-first-image-section-2.png" alt="Image" class="img-responsive">
+                            </div>
+                            <div class="tm-block red-bg">
+                                <a href="vision.html" class="tm-block-link">Nuestra Visión</a>
+                            </div>
+                            <div class="tm-block yellow-bg">
+                                <a href="#" class="tm-block-link">Reconocimientos</a>
+                            </div>
+                             <div class="tm-block">
+                                <img src="img/cleverest-ai-agent-first-image-section-3.png" alt="Image" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-7">
+                        <h3 class="section-title-2 text-uppercase font-weight-300">Nuestras <span class="blue-text">Soluciones de IA</span></h3>
+                        <p class="justify-text">En Cleverest.cl,  creemos que las organizaciones deben aprovechar todo el poder de los datos y la inteligencia artificial.  Nuestros servicios de IA y agentes inteligentes transforman sus datos en valor, mejorando la eficiencia y la toma de decisiones en su organización.   Nos comprometemos con la excelencia y en crear un impacto positivo en su empresa.</p>
+                       <p class="justify-text">
+                         Ofrecemos servicios de IA que incluyen la creación de agentes personalizados para automatizar procesos, realizar análisis complejos, y proporcionar informes predictivos. También ofrecemos la integración de IA en diferentes sistemas, mejorando la operatividad de sus empresas con una gestión inteligente de la información y una automatización de procesos inteligentes.
+                        </p>
+                       <p class="justify-text">
+                          En Cleverest.cl trabajamos estrechamente con nuestros clientes, adaptándonos a las necesidades específicas de su empresa y garantizando la transformación de sus datos en una verdadera ventaja competitiva. Contáctenos y transforme su empresa en la era digital con el poder de la inteligencia artificial.
+                       </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Blog -->
+        <section class="templatemo-container">
+            <div class="container">
+                <div class="row section-title-container">
+                     <div class="col-lg-12 text-uppercase text-center">
+                        <h2 class="section-title">Blog</h2>
+                        <div class="section-title-underline-blue"></div>
+                        <hr class="section-title-underline">
+                          <p class="small">Últimas noticias del mundo de la IA</p>
+                    </div>
+                </div>
+                <div class="row posts-container">
+                    <div class="post-excerpt post-excerpt-left">
+                        <div class="post-content">
+                            <h3 class="post-title">La IA y el Futuro de las Empresas</h3>
+                            <p class="post-description">Descubra cómo la IA puede transformar su negocio y llevarlo al siguiente nivel.</p>
+                        </div>
+                        <div class="post-date-container">
+                            <div class="post-month">Dic</div>
+                            <div class="post-date">18</div>
+                        </div>
+                        <div class="post-arrow-container rotate-arrow">
+                            <img src="img/blog-arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="post-excerpt post-excerpt-right">
+                        <div class="post-arrow-container">
+                            <img src="img/blog-arrow.png" alt="arrow">
+                        </div>
+                        <div class="post-date-container">
+                            <div class="post-month">Dic</div>
+                            <div class="post-date">19</div>
+                        </div>
+                       <div class="post-content">
+                            <h3 class="post-title">Agentes de IA Personalizados</h3>
+                            <p class="post-description">Aprenda como los agentes de IA pueden ser adaptados a las necesidades específicas de su empresa y mejore la eficiencia.</p>
+                         </div>
+                    </div>
+                     <div class="post-excerpt post-excerpt-left">
+                        <div class="post-content">
+                            <h3 class="post-title">El poder de la Inteligencia en el Análisis de Datos</h3>
+                            <p class="post-description">Descubre como la IA mejora el análisis de datos y las estrategias para una toma de decisión inteligente.</p>
 
-</body>
+                        </div>
+                        <div class="post-date-container">
+                            <div class="post-month">Dic</div>
+                            <div class="post-date">20</div>
+                        </div>
+                        <div class="post-arrow-container rotate-arrow">
+                            <img src="img/blog-arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                    <div class="post-excerpt post-excerpt-right">
+                         <div class="post-arrow-container">
+                            <img src="img/blog-arrow.png" alt="arrow">
+                        </div>
+                        <div class="post-date-container">
+                            <div class="post-month">Dic</div>
+                            <div class="post-date">21</div>
+                        </div>
+                       <div class="post-content">
+                            <h3 class="post-title">Tendencias de la IA en 2025</h3>
+                           <p class="post-description">Un resumen de las tendencias del mundo de la inteligencia artificial y sus aplicaciones en el mundo empresarial.</p>
+
+                        </div>
+                    </div>
+                   <div class="post-excerpt post-excerpt-left">
+                       <div class="post-content">
+                            <h3 class="post-title">Transformación Digital con IA</h3>
+                            <p class="post-description">Aprenda como la IA puede impulsar la transformación digital en su empresa para un futuro exitoso.</p>
+                       </div>
+                        <div class="post-date-container">
+                            <div class="post-month">Dic</div>
+                            <div class="post-date">22</div>
+                        </div>
+                        <div class="post-arrow-container rotate-arrow">
+                             <img src="img/blog-arrow.png" alt="arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="templatemo-container features">
+            <div class="container features-content">
+               <div class="row section-title-container">
+                   <div class="col-lg-12 text-uppercase text-center">
+                        <h2 class="section-title">Nuestras Caracteristicas</h2>
+                        <div class="section-title-underline-blue"></div>
+                        <hr class="section-title-underline">
+                        <p class="small">Soluciones personalizadas para su empresa</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="feature-container">
+                        <p class="text-center margin-bottom-30 gray-text">En Cleverest.cl, ofrecemos soluciones de inteligencia artificial para todo tipo de empresas. Contáctenos para conocer cómo podemos ayudarle a tener un futuro más rentable.</p>
+                         <div class="tm-progress-container tm-progress-container-left">
+                            <div class="tm-progress-label">
+                                <p class="pull-left">Análisis de Datos</p>
+                                 <p class="pull-right">95%</p>
+                            </div>
+                            <div class="progress tm-progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                    <span class="sr-only">95% Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="tm-progress-container tm-progress-container-right">
+                             <div class="tm-progress-label">
+                                 <p class="pull-left">Agentes de IA</p>
+                                 <p class="pull-right">80%</p>
+                             </div>
+                             <div class="progress tm-progress">
+                                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                    <span class="sr-only">80% Complete</span>
+                                 </div>
+                             </div>
+                        </div>
+                        <div class="tm-progress-container tm-progress-container-left">
+                             <div class="tm-progress-label">
+                                 <p class="pull-left">Automatización de Procesos</p>
+                                <p class="pull-right">90%</p>
+                            </div>
+                             <div class="progress tm-progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                    <span class="sr-only">90% Complete</span>
+                                </div>
+                             </div>
+                        </div>
+                          <div class="tm-progress-container tm-progress-container-right">
+                             <div class="tm-progress-label">
+                                <p class="pull-left">Servicios de Transformación Digital</p>
+                                  <p class="pull-right">96%</p>
+                            </div>
+                             <div class="progress tm-progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 96%;">
+                                    <span class="sr-only">96% Complete</span>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+             <div class="bg-overlay"></div>
+        </section>
+        <div class="blue-divider effect1">
+            <div class="dark-blue-bg"></div>
+            <div class="blue-divider-bg-graphic"></div>
+            <div class="blue-bg"></div>
+        </div>
+        <section class="templatemo-container blue-bg footer-nav effect1">
+            <div class="container">
+                 <div class="col-lg-2 col-md-2 col-sm-6 footer-block">
+                     <h3 class="text-uppercase">Menú Principal</h3>
+                    <nav class="text-uppercase templatemo-nav-2">
+                        <ul>
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="about.html">Acerca de</a></li>
+                            <li><a href="profile.html">Perfil</a></li>
+                            <li><a href="contact.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 footer-block">
+                    <h3 class="text-uppercase">Acerca de Cleverest.cl</h3>
+                    <p>En Cleverest.cl, transformamos sus datos en inteligencia accionable. Somos su socio estratégico en la digitalización y la era de la IA, ofreciendo servicios de vanguardia para llevar su empresa al siguiente nivel. Con nuestra experiencia, estamos listos para ayudarle a tener los mejores resultados con la última tecnología.</p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 footer-block">
+                     <h3 class="text-uppercase">Servicios</h3>
+                    <ul>
+                         <li><a href="#">Análisis de datos con IA</a></li>
+                         <li><a href="#">Agentes de IA personalizados</a></li>
+                        <li><a href="#">Automatización de procesos</a></li>
+                        <li><a href="#">Transformación Digital</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 footer-block">
+                    <h3 class="text-uppercase">Características</h3>
+                     <ul>
+                        <li><a href="#">Tecnología de vanguardia</a></li>
+                         <li><a href="#">Soluciones personalizadas</a></li>
+                         <li><a href="#">Implementación efectiva</a></li>
+                        <li><a href="#">Soporte de expertos</a></li>
+                     </ul>
+                </div>
+            </div>
+        </section>
+        <!-- end main content -->
+        <footer class="text-center">
+            <p class="small copyright-text">Copyright © <span id="current-year"></span> cleverest.cl</p>
+        </footer>
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->
+        <script type="text/javascript" src="js/responsiveCarousel.min.js"></script>      <!-- Carousel -->
+        <script type="text/javascript" src="js/templatemo-script.js"></script>      <!-- Templatemo Script -->
+        <script src="script.js"></script>
+        <script>
+
+            $(function() {
+                $('.crsl-items').carousel({
+                    visible: 1,
+                    itemMinWidth: 320,
+                    itemEqualHeight: 320,
+                    itemMargin: 9,
+                });
+                $(".crsl-nav a[href=#]").on('click', function(e) {
+                    e.preventDefault();
+                });
+            });
+
+        </script>
+    </body>
 </html>
