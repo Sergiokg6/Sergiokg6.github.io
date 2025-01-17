@@ -1,0 +1,27 @@
+{
+  "homepage": "https://sergiokg6.github.io",
+  "name": "cleverest",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export",
+    "predeploy": "npm run export",
+    "deploy": "gh-pages -b master -d out",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.2",
+    "next": "13.4.2",
+    "react": "18.2.0",
+    "react-countup": "^6.4.2",
+    "react-dom": "18.2.0",
+    "react-scroll-parallax": "^3.4.2",
+    "swiper": "^8.4.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
