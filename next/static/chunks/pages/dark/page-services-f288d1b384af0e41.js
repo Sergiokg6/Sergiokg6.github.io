@@ -3,7 +3,7 @@
   {
     4007: function (e, s, n) {
       (window.__NEXT_P = window.__NEXT_P || []).push([
-        "/dark/page-services",
+        "/page-services",
         function () {
           return n(4505);
         },

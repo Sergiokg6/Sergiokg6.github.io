@@ -3,7 +3,7 @@
   {
     9445: function (e, s, a) {
       (window.__NEXT_P = window.__NEXT_P || []).push([
-        "/dark/page-contact",
+        "/page-contact",
         function () {
           return a(2566);
         },
