@@ -29,7 +29,7 @@
               children: [
                 (0, r.jsxs)(c(), {
                   children: [
-                    (0, r.jsx)("title", { children: "Geekfolio" }),
+                    (0, r.jsx)("title", { children: "Cleverest" }),
                     (0, r.jsx)("meta", {
                       name: "viewport",
                       content:
