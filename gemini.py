@@ -141,7 +141,7 @@ class GeminiChat:
 
 
 def main():
-    # You can store this in an environment variable instead
+    # You can store this in an environment variable instead, This is from google ai studio - FREE AI LLM
     API_KEY = "AIzaSyCa24nWFs1Zh6Bm-_3axv_T_s9Cn9UMOdQ"
 
     chat = GeminiChat(API_KEY)
