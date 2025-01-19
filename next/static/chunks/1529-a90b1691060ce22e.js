@@ -57,7 +57,7 @@
                             className: "text mt-10 pb-30 bord-thin-bottom",
                             children: (0, i.jsx)("p", {
                               children:
-                                "Things go wrong, have questions. We’ve understood. So we have AI agents",
+                                "Things go wrong, have questions. We’ve understood, We have AI agents",
                             }),
                           }),
                           (0, i.jsxs)("div", {
