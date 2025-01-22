@@ -35,7 +35,7 @@
             children: [
               (0, e.jsx)(r(), {
                 children: (0, e.jsx)("title", {
-                  children: "Geekfolio - Portfolio Masonry 3 Col",
+                  children: "Cleverest - Portfolio Masonry 3 Col",
                 }),
               }),
               (0, e.jsx)(u.Z, {}),

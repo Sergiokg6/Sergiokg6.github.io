@@ -71,7 +71,7 @@
           (0, i.jsxs)(i.Fragment, {
             children: [
               (0, i.jsx)(s(), {
-                children: (0, i.jsx)("title", { children: "Geekfolio - Main" }),
+                children: (0, i.jsx)("title", { children: "Cleverest - Main" }),
               }),
               (0, i.jsx)(c.Z, {}),
               (0, i.jsxs)("div", {

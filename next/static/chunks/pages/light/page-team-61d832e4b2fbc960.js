@@ -37,7 +37,7 @@
             children: [
               (0, t.jsx)(c(), {
                 children: (0, t.jsx)("title", {
-                  children: "Geekfolio - Our Team",
+                  children: "Cleverest - Our Team",
                 }),
               }),
               (0, t.jsx)(r.Z, {}),

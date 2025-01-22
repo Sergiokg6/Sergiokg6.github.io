@@ -45,7 +45,7 @@
             children: [
               (0, t.jsx)(l(), {
                 children: (0, t.jsx)("title", {
-                  children: "Geekfolio - Digital Agency",
+                  children: "Cleverest - Digital Agency",
                 }),
               }),
               (0, t.jsx)(c.Z, {}),

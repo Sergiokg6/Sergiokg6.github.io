@@ -43,7 +43,7 @@
             children: [
               (0, c.jsx)(r(), {
                 children: (0, c.jsx)("title", {
-                  children: "Geekfolio - Architecture",
+                  children: "Cleverest - Architecture",
                 }),
               }),
               (0, c.jsx)(o.Z, {}),

@@ -369,7 +369,7 @@
       var l = i(1664),
         n = i.n(l),
         c = JSON.parse(
-          '[{"id":1,"title":"Free advertising for your online business.","image":"/dark/assets/imgs/sass-img/blog/1.jpg","date":"August 6, 2022","tags":["Marketing","Design"]},{"id":2,"title":"Business meeting 2023 in San Francisco.","image":"/dark/assets/imgs/sass-img/blog/2.jpg","date":"August 6, 2022","tags":["Marketing","Design"]}]'
+          '[{"id":1,"title":"AI Agents: The End of Common People?","image":"/dark/assets/imgs/sass-img/blog/1.jpg","date":"December 13, 2024","tags":["AI","Agentic Agents"]},{"id":2,"title":"Engineering the Future: A Look at Autonomous AI Systems","image":"/dark/assets/imgs/sass-img/blog/2.jpg","date":"January 16, 2025","tags":["AI","Generative Automation"]}]'
         ),
         t = function () {
           return (0, a.jsx)("section", {
@@ -811,7 +811,7 @@
                           children: (0, a.jsxs)("p", {
                             className: "fz-13",
                             children: [
-                              "\xa9 2023 Geekfolio is Proudly Powered by ",
+                              "\xa9 2025 Cleverest is Powered by ",
                               (0, a.jsxs)("span", {
                                 className: "underline",
                                 children: [

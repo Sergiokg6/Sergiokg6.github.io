@@ -38,7 +38,7 @@
             children: [
               (0, n.jsx)(c(), {
                 children: (0, n.jsx)("title", {
-                  children: "Geekfolio - Shop Checkout",
+                  children: "Cleverest - Shop Checkout",
                 }),
               }),
               (0, n.jsx)(l.Z, {}),

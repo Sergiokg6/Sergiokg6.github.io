@@ -107,7 +107,7 @@
           (0, t.jsxs)(t.Fragment, {
             children: [
               (0, t.jsx)(s(), {
-                children: (0, t.jsx)("title", { children: "Geekfolio - Main" }),
+                children: (0, t.jsx)("title", { children: "Cleverest - Main" }),
               }),
               (0, t.jsx)(a.Z, {}),
               (0, t.jsxs)("div", {

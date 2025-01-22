@@ -374,7 +374,7 @@
             children: [
               (0, a.jsx)(c(), {
                 children: (0, a.jsx)("title", {
-                  children: "Geekfolio - Image Out Frame",
+                  children: "Cleverest - Image Out Frame",
                 }),
               }),
               (0, a.jsx)(r.Z, {}),

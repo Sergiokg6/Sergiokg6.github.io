@@ -36,7 +36,7 @@
             children: [
               (0, s.jsx)(o(), {
                 children: (0, s.jsx)("title", {
-                  children: "Geekfolio - Project Details",
+                  children: "Cleverest - Project Details",
                 }),
               }),
               (0, s.jsx)(d.Z, {}),

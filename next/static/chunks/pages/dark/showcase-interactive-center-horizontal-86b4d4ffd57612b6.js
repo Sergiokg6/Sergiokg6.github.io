@@ -205,7 +205,7 @@
             children: [
               (0, r.jsx)(l(), {
                 children: (0, r.jsx)("title", {
-                  children: "Geekfolio - Interactive Horizontal",
+                  children: "Cleverest - Interactive Horizontal",
                 }),
               }),
               (0, r.jsx)(c.Z, {}),

@@ -35,7 +35,7 @@
             children: [
               (0, e.jsx)(r(), {
                 children: (0, e.jsx)("title", {
-                  children: "Geekfolio - Portfolio Classic Grid 4 Col",
+                  children: "Cleverest - Portfolio Classic Grid 4 Col",
                 }),
               }),
               (0, e.jsx)(u.Z, {}),

@@ -252,7 +252,7 @@
             children: [
               (0, r.jsx)(n(), {
                 children: (0, r.jsx)("title", {
-                  children: "Geekfolio - Carousel",
+                  children: "Cleverest - Carousel",
                 }),
               }),
               (0, r.jsx)(c.Z, {}),

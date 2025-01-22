@@ -37,7 +37,7 @@
             children: [
               (0, a.jsx)(c(), {
                 children: (0, a.jsx)("title", {
-                  children: "Geekfolio - Vertical Parallax",
+                  children: "Cleverest - Vertical Parallax",
                 }),
               }),
               (0, a.jsx)(u.Z, {}),

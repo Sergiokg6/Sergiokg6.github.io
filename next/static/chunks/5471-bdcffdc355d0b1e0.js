@@ -391,7 +391,7 @@
                               children: (0, a.jsxs)("p", {
                                 className: "fz-13",
                                 children: [
-                                  "\xa9 2023 Geekfolio is Proudly Powered by ",
+                                  "\xa9 2025 Cleverest is Powered by ",
                                   (0, a.jsx)("span", {
                                     className: "underline",
                                     children: (0, a.jsx)("a", {

@@ -233,7 +233,7 @@
           children: [
             (0, r.jsx)(i(), {
               children: (0, r.jsx)("title", {
-                children: "Geekfolio - Parallax Slider",
+                children: "Cleverest - Parallax Slider",
               }),
             }),
             (0, r.jsx)(n.Z, {}),

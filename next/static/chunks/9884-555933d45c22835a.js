@@ -1268,7 +1268,7 @@
       var i = a(1664),
         n = a.n(i),
         r = JSON.parse(
-          '[{"id":1,"image":"/dark/assets/imgs/freelancer/works/1.jpg","title":"GeekFolio Architecture","category":"Branding","date":"2023"},{"id":2,"image":"/dark/assets/imgs/freelancer/works/2.jpg","title":"Luxury Modern Chair","category":"Branding","date":"2023"},{"id":3,"image":"/dark/assets/imgs/freelancer/works/3.jpg","title":"Partiner BPO","category":"Branding","date":"2023"},{"id":4,"image":"/dark/assets/imgs/freelancer/works/4.jpg","title":"From our gallery","category":"Branding","date":"2023"},{"id":5,"image":"/dark/assets/imgs/freelancer/works/5.jpg","title":"Astra Brand Identity","category":"Branding","date":"2023"}]'
+          '[{"id":1,"image":"/dark/assets/imgs/freelancer/works/1.jpg","title":"Cleverest Architecture","category":"Branding","date":"2023"},{"id":2,"image":"/dark/assets/imgs/freelancer/works/2.jpg","title":"Luxury Modern Chair","category":"Branding","date":"2023"},{"id":3,"image":"/dark/assets/imgs/freelancer/works/3.jpg","title":"Partiner BPO","category":"Branding","date":"2023"},{"id":4,"image":"/dark/assets/imgs/freelancer/works/4.jpg","title":"From our gallery","category":"Branding","date":"2023"},{"id":5,"image":"/dark/assets/imgs/freelancer/works/5.jpg","title":"Astra Brand Identity","category":"Branding","date":"2023"}]'
         ),
         c = function () {
           return (0, l.jsx)("section", {

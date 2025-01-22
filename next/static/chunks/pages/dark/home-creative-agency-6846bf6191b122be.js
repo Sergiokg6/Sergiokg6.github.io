@@ -43,7 +43,7 @@
             children: [
               (0, i.jsx)(u(), {
                 children: (0, i.jsx)("title", {
-                  children: "Geekfolio - Creative Agency",
+                  children: "Cleverest - Creative Agency",
                 }),
               }),
               (0, i.jsx)(o.Z, {}),

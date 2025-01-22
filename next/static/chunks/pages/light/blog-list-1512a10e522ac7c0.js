@@ -371,7 +371,7 @@
             children: [
               (0, a.jsx)(n(), {
                 children: (0, a.jsx)("title", {
-                  children: "Geekfolio - Blog List",
+                  children: "Cleverest - Blog List",
                 }),
               }),
               (0, a.jsx)(r.Z, {}),

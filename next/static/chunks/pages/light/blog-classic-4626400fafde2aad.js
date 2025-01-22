@@ -373,7 +373,7 @@
             children: [
               (0, l.jsx)(c(), {
                 children: (0, l.jsx)("title", {
-                  children: "Geekfolio - Blog Classic",
+                  children: "Cleverest - Blog Classic",
                 }),
               }),
               (0, l.jsx)(r.Z, {}),

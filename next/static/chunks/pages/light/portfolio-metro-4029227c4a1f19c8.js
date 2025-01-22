@@ -35,7 +35,7 @@
             children: [
               (0, i.jsx)(r(), {
                 children: (0, i.jsx)("title", {
-                  children: "Geekfolio - Portfolio Metro",
+                  children: "Cleverest - Portfolio Metro",
                 }),
               }),
               (0, i.jsx)(l.Z, {}),

@@ -820,7 +820,7 @@
                           (0, a.jsxs)("h3", {
                             className: "mb-15",
                             children: [
-                              "Geekfolio ",
+                              "Cleverest ",
                               (0, a.jsx)("br", {}),
                               " Architects studio",
                             ],

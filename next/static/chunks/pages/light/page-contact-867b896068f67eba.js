@@ -317,7 +317,7 @@
             children: [
               (0, i.jsx)(n(), {
                 children: (0, i.jsx)("title", {
-                  children: "Geekfolio - Contact Us",
+                  children: "Cleverest - Contact Us",
                 }),
               }),
               (0, i.jsx)(r.Z, {}),

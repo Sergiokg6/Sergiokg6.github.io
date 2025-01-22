@@ -35,7 +35,7 @@
             children: [
               (0, t.jsx)(l(), {
                 children: (0, t.jsx)("title", {
-                  children: "Geekfolio - Portfolio Classic Grid 4 Col",
+                  children: "Cleverest - Portfolio Classic Grid 4 Col",
                 }),
               }),
               (0, t.jsx)(u.Z, {}),

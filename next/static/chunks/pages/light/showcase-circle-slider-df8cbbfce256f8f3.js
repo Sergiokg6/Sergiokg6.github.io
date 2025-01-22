@@ -178,7 +178,7 @@
             children: [
               (0, i.jsx)(d(), {
                 children: (0, i.jsx)("title", {
-                  children: "Geekfolio - Circle Slider",
+                  children: "Cleverest - Circle Slider",
                 }),
               }),
               (0, i.jsx)(h.Z, {}),

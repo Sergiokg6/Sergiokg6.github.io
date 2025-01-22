@@ -42,7 +42,7 @@
             children: [
               (0, r.jsx)(t(), {
                 children: (0, r.jsx)("title", {
-                  children: "Geekfolio - Freelancer",
+                  children: "Cleverest - Freelancer",
                 }),
               }),
               (0, r.jsx)(a.Z, {}),

@@ -146,7 +146,7 @@
             children: [
               (0, a.jsx)(l(), {
                 children: (0, a.jsx)("title", {
-                  children: "Geekfolio - Frame Slider",
+                  children: "Cleverest - Frame Slider",
                 }),
               }),
               (0, a.jsx)(u.Z, {}),

@@ -726,7 +726,7 @@
                             children: (0, i.jsxs)("p", {
                               className: "fz-13",
                               children: [
-                                "\xa9 2023 Geekfolio is Proudly Powered by ",
+                                "\xa9 2025 Cleverest is Powered by ",
                                 (0, i.jsxs)("span", {
                                   className: "underline",
                                   children: [
